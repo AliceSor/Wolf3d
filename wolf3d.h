@@ -42,5 +42,7 @@ double			castRay(t_data *data, double angle);
 void			putColum(t_data *data, double dist);
 int				parseMap(t_data *data);
 void			init(t_data *data);
+double			rayHorizontal(t_data *data, double angle);
+double			rayVertical(t_data *data, double angle);
 
 #endif
