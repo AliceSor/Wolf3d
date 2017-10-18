@@ -1,36 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   rayCasting.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asoroka <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/08/15 18:01:08 by asoroka           #+#    #+#             */
-/*   Updated: 2017/10/18 19:24:37 by asoroka          ###   ########.fr       */
+/*   Created: 2017/10/18 18:58:28 by asoroka           #+#    #+#             */
+/*   Updated: 2017/10/18 19:26:23 by asoroka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../wolf3d.h"
 
-int				main(void)
+void			rayCasting(t_data *data)
 {
-	int			isParse;
-	t_data		*data;
+	double		x;
+	double		dist;
+	double		angleCurrent;
 
-	//init(data);
-	//
-	//isParse = parseMap(data);
-	//
-	//if (isParse == -1)
-	//{
-	//	errorMessage();
-	//	return (0);
-	//}
-	//
-	rayCasting(data);
-	//
-	//mlx_hook(data->mlx->win, 2, 5, buttons, rt);
-	//mlx_hook(data->mlx->win, 17, 0, destroy, 0);
-	//mlx_loop(data->mlx->mlx);
-	return (0);
+	angleCurrent = data->dir - fov / 2;
+	while (x < WIDTH)
+	{
+		//dist = castRay(data, angleCurrent);
+		//putColumn(data, dist);
+		x++;
+		angleCurrent += data->anglInc;
+	}
 }
