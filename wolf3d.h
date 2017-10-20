@@ -23,15 +23,17 @@ typedef struct s_player
  double			y;
  double			fov;
  double			dir;
- double			anglInc;
+ double			anglIncrement;
  double			height;
+ double			tanVertFOV;
 }				t_player;
 
 typedef struct s_data
 {
 	t_mlx		*mlx;
 	t_player	*player;
-	char		**map;
+	int		**map;
+	double		h;
 }				t_data;
 
 t_mlx			*create_win(void);
