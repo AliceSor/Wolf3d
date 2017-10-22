@@ -28,20 +28,21 @@ typedef struct s_player
  double			tanVertFOV;
 }				t_player;
 
-typedef struct s_data
+typedef struct	s_data
 {
 	t_mlx		*mlx;
 	t_player	*player;
-	int		**map;
+	int			**map;
 	double		h;
 }				t_data;
 
 t_mlx			*create_win(void);
 void			create_image(t_mlx *mlx);
-void			put_pixel(int i, int color, t_mlx *mlx);
+void			putPixel(int x, int y, int color, t_mlx *mlx);
 void			rayCasting(t_data *data);
 double			castRay(t_data *data, double angle);
 void			putColum(t_data *data, double dist);
+void			putColumn(t_data *data, int x, double dist);
 int				parseMap(t_data *data);
 void			init(t_data *data);
 double			rayHorizontal(t_data *data, double angle);

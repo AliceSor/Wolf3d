@@ -11,7 +11,7 @@ void		putColumn(t_data *data, int x, double dist)
 	maxY = (int)(HEIGHT / 2 + h);
 	while (maxY >= minY)
 	{
-		put_pixel((data->mlx->ls * maxY / 4 + x), 0xFFFFFF, data->mlx);
+		putPixel(x, y, 0xFFFFFF, data->mlx);
 		maxY--;
 	}
 }

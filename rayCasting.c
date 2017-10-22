@@ -22,8 +22,8 @@ void			rayCasting(t_data *data)
 	while (x < WIDTH)
 	{
 		//dist = castRay(data, angleCurrent);
-		//putColumn(data, dist);
+		putColumn(data, x, dist);
 		x++;
-		angleCurrent += data->anglInc;
+		angleCurrent += data->anglIncrement;
 	}
 }
