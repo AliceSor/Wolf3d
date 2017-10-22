@@ -12,12 +12,25 @@
 
 #include "../wolf3d.h"
 
+static void		init(t_data *d)
+{
+	d = (t_data *)malloc(sizeof(t_data) + 10);
+
+	if (d)
+	{
+		d->mlx = create_win();
+		d->player = (t_player *)malloc(sizeof(t_player) + 10);
+		// d->map = createMap();
+		d->h = 64;
+	}
+}
+
 int				main(void)
 {
 	int			isParse;
 	t_data		*data;
 
-	//init(data);
+	init(data);
 	//
 	//isParse = parseMap(data);
 	//
@@ -27,10 +40,10 @@ int				main(void)
 	//	return (0);
 	//}
 	//
-	rayCasting(data);
+	rayCasting(data); //finished
 	//
 	//mlx_hook(data->mlx->win, 2, 5, buttons, rt);
 	//mlx_hook(data->mlx->win, 17, 0, destroy, 0);
-	//mlx_loop(data->mlx->mlx);
+	mlx_loop(data->mlx->mlx);
 	return (0);
 }
