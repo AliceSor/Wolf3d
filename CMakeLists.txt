@@ -1,11 +1,19 @@
 cmake_minimum_required(VERSION 3.7)
 project(Wolf3d)
 
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}  -framework OpenGL -framework Appkit ")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS}  -lmlx -framework OpenGL -framework AppKit")
 
 set(SOURCE_FILES
-        main.c
-        libmlx.a
-        wolf3d.h)
+        src/main.c
+        src/create_image.c
+
+
+src/create_win.c
+src/putPixel.c
+src/createMap.c
+src/findRay.c
+src/putColumn.c
+src/rayCasting.c
+        src/buttons.c)
 
 add_executable(Wolf3d ${SOURCE_FILES})

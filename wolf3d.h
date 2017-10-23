@@ -4,10 +4,9 @@
 
 #ifndef WOLF3D_H
 # define WOLF3D_H
-# define HEIGHT 800
-# define WIDTH 1000
+# define HEIGHT 400
+# define WIDTH 600
 # define RAD 0.01745329251994
-# define PLAYER data->player
 
 # include <stdlib.h>
 # include <mlx.h>
@@ -24,25 +23,19 @@ typedef struct s_mlx
 	int			ls;
 }				t_mlx;
 
-typedef struct s_player
-{
- double			x;
- double			y;
- int			mapX;
- int			mapY;
- double			fov;
- double			dir;
- double			anglIncrement;
- double			height;
- double			tanVertFOV;
-}				t_player;
-
 typedef struct	s_data
 {
 	t_mlx		*mlx;
-	t_player	*player;
 	int			**map;
 	double		h;
+    double      posX;
+    double      posY;  //x and y start position
+    double dirX;
+    double dirY; //initial direction vector
+    double planeX;
+    double planeY;
+    int moveSpeed;
+    double rotSpeed;
 }				t_data;
 
 t_mlx			*create_win(void);
@@ -55,5 +48,8 @@ int				parseMap(t_data *data);
 double			rayHorizontal(t_data *data, double angle);
 double			rayVertical(t_data *data, double angle);
 void				createMap(t_data *d);
+int					buttons(int keycode, t_data *data);
+void				putImage(t_data *data);
+int					destroy(void);
 
 #endif

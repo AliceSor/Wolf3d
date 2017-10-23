@@ -6,7 +6,8 @@ void		putColumn(t_data *data, int x, double dist)
 	int		minY;
 	int		maxY;
 	
-	h = dist / data->player->tanVertFOV;
+//	h = dist / data->player->tanVertFOV;
+	h = 64 / (dist * 277);
 	minY = (int)(HEIGHT / 2 - h);
 	maxY = (int)(HEIGHT / 2 + h);
 	while (maxY >= minY)
