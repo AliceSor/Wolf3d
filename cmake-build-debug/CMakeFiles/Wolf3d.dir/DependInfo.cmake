@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/putColumn.c" "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/putColumn.c.o"
   "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/putPixel.c" "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/putPixel.c.o"
   "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/rayCasting.c" "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/rayCasting.c.o"
+  "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/rotate.c" "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/rotate.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

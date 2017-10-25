@@ -28,3 +28,6 @@ CMakeFiles/Wolf3d.dir/src/putPixel.c.o: ../wolf3d.h
 CMakeFiles/Wolf3d.dir/src/rayCasting.c.o: ../src/rayCasting.c
 CMakeFiles/Wolf3d.dir/src/rayCasting.c.o: ../wolf3d.h
 
+CMakeFiles/Wolf3d.dir/src/rotate.c.o: ../src/rotate.c
+CMakeFiles/Wolf3d.dir/src/rotate.c.o: ../wolf3d.h
+

@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Wolf3d.dir/src/putColumn.c.o"
   "CMakeFiles/Wolf3d.dir/src/rayCasting.c.o"
   "CMakeFiles/Wolf3d.dir/src/buttons.c.o"
+  "CMakeFiles/Wolf3d.dir/src/rotate.c.o"
   "Wolf3d.pdb"
   "Wolf3d"
 )

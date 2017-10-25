@@ -109,6 +109,9 @@
 		<Unit filename="/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/rayCasting.c">
 			<Option target="Wolf3d"/>
 		</Unit>
+		<Unit filename="/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/rotate.c">
+			<Option target="Wolf3d"/>
+		</Unit>
 		<Unit filename="/nfs/2016/a/asoroka/Clion_projects/Wolf3d/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -28,28 +28,6 @@ int					destroy(void)
 
 int					buttons(int keycode, t_data *d)
 {
-//	if (keycode == 126)
-//	{
-//		d->player->y -= 5;
-//		PLAYER->mapY = PLAYER->y / d->h;
-//	}
-//	if (keycode == 125)
-//	{
-//		d->player->y += 5;
-//		PLAYER->mapY = PLAYER->y / d->h;
-//	}
-//	if (keycode == 123)
-//	{
-//		PLAYER->dir += 5;
-//		if (PLAYER->dir > 330)
-//			PLAYER->dir = 30;
-//	}
-//	if (keycode == 124)
-//	{
-//		PLAYER->dir -= 5;
-//		if (PLAYER->dir < 30)
-//			PLAYER->dir = 30;
-//	}
 	if (keycode == 49)
 		d->h +=10;
 	if (keycode == 126)
@@ -68,7 +46,7 @@ int					buttons(int keycode, t_data *d)
 			d->posY -= d->dirY * d->moveSpeed;
 	}
 	//rotate to the right
-	if (keycode == 123)
+	if (keycode == 124)
 	{
 		//both camera direction and camera plane must be rotated
 		double oldDirX = d->dirX;
@@ -79,7 +57,7 @@ int					buttons(int keycode, t_data *d)
 		d->planeY = oldPlaneX * sin(-d->rotSpeed) + d->planeY * cos(-d->rotSpeed);
 	}
 	//rotate to the left
-	if (keycode == 124)
+	if (keycode == 123)
 	{
 		//both camera direction and camera plane must be rotated
 		double oldDirX = d->dirX;

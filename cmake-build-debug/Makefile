@@ -366,6 +366,33 @@ src/rayCasting.c.s:
 	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/rayCasting.c.s
 .PHONY : src/rayCasting.c.s
 
+src/rotate.o: src/rotate.c.o
+
+.PHONY : src/rotate.o
+
+# target to build an object file
+src/rotate.c.o:
+	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/rotate.c.o
+.PHONY : src/rotate.c.o
+
+src/rotate.i: src/rotate.c.i
+
+.PHONY : src/rotate.i
+
+# target to preprocess a source file
+src/rotate.c.i:
+	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/rotate.c.i
+.PHONY : src/rotate.c.i
+
+src/rotate.s: src/rotate.c.s
+
+.PHONY : src/rotate.s
+
+# target to generate assembly for a file
+src/rotate.c.s:
+	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/rotate.c.s
+.PHONY : src/rotate.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -402,6 +429,9 @@ help:
 	@echo "... src/rayCasting.o"
 	@echo "... src/rayCasting.i"
 	@echo "... src/rayCasting.s"
+	@echo "... src/rotate.o"
+	@echo "... src/rotate.i"
+	@echo "... src/rotate.s"
 .PHONY : help
 
 

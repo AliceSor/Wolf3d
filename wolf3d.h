@@ -14,6 +14,13 @@
 # include <unistd.h>
 # include <stdio.h>
 
+typedef struct s_xpm
+{
+    void        *xpm;
+    int        *imdata;
+    int         ls;
+}               t_xpm;
+
 typedef struct s_mlx
 {
 	void		*win;
@@ -36,6 +43,7 @@ typedef struct	s_data
     double planeY;
     int moveSpeed;
     double rotSpeed;
+    int         mouse_x;
 }				t_data;
 
 t_mlx			*create_win(void);
@@ -51,5 +59,6 @@ void				createMap(t_data *d);
 int					buttons(int keycode, t_data *data);
 void				putImage(t_data *data);
 int					destroy(void);
+int         rotate(int keycode, int x, int y, t_data *data);
 
 #endif
