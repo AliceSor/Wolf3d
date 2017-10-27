@@ -12,33 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a95f25a-e634-40c4-aff1-8719c6ee0b27" name="Default" comment="init">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/create_xpm.c" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/main.c.o" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/buttons.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/buttons.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/createMap.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/createMap.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/create_image.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/create_image.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/create_win.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/create_win.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/putColumn.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/putColumn.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/putPixel.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/putPixel.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/rayCasting.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/rayCasting.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/rotate.c.o" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/rotate.c.o" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Wolf3d" afterPath="$PROJECT_DIR$/cmake-build-debug/Wolf3d" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/DependInfo.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/cmake_clean.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/link.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Wolf3d.dir/progress.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Wolf3d.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/Wolf3d.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/buttons.c" afterPath="$PROJECT_DIR$/src/buttons.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/createMap.c" afterPath="$PROJECT_DIR$/src/createMap.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/create_xpm.c" afterPath="$PROJECT_DIR$/src/create_xpm.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.c" afterPath="$PROJECT_DIR$/src/main.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rayCasting.c" afterPath="$PROJECT_DIR$/src/rayCasting.c" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/rotate.c" afterPath="$PROJECT_DIR$/src/rotate.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wolf3d.h" afterPath="$PROJECT_DIR$/wolf3d.h" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -54,28 +30,28 @@
       <file leaf-file-name="main.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+            <state relative-caret-position="654">
+              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createMap.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/createMap.c">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="47" column="5" lean-forward="false" selection-start-line="47" selection-start-column="5" selection-end-line="47" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rayCasting.c" pinned="false" current-in-tab="false">
+      <file leaf-file-name="rayCasting.c" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/rayCasting.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1339">
-              <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+            <state relative-caret-position="840">
+              <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="putPixel.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/putPixel.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -114,8 +90,8 @@
       <file leaf-file-name="create_image.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/create_image.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="20" selection-end-column="78" />
+            <state relative-caret-position="330">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -124,18 +100,18 @@
       <file leaf-file-name="create_xpm.c" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/create_xpm.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="78" lean-forward="false" selection-start-line="20" selection-start-column="78" selection-end-line="20" selection-end-column="78" />
+            <state relative-caret-position="510">
+              <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wolf3d.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="wolf3d.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wolf3d.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state relative-caret-position="450">
+              <caret line="30" column="14" lean-forward="false" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
               <folding>
                 <element signature="e#152#172#0" expanded="true" />
               </folding>
@@ -147,7 +123,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find />
       <find>\</find>
       <find>rt</find>
       <find>worldMap</find>
@@ -164,6 +139,20 @@
       <find>data-&gt;</find>
       <find>false</find>
       <find>5</find>
+      <find>sideDistX</find>
+      <find>sideDistY</find>
+      <find>deltaDistX</find>
+      <find>deltaDistY</find>
+      <find>stepX</find>
+      <find>stepY</find>
+      <find>rayPosX</find>
+      <find>rayPosY</find>
+      <find>r_pos_x</find>
+      <find>r_pos_y</find>
+      <find>rayDirX</find>
+      <find>rayDirY</find>
+      <find>mapX</find>
+      <find>mapY</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -176,12 +165,12 @@
         <option value="$PROJECT_DIR$/src/putColumn.c" />
         <option value="$PROJECT_DIR$/src/findRay.c" />
         <option value="$PROJECT_DIR$/src/createMap.c" />
-        <option value="$PROJECT_DIR$/src/rayCasting.c" />
         <option value="$PROJECT_DIR$/src/buttons.c" />
         <option value="$PROJECT_DIR$/src/rotate.c" />
         <option value="$PROJECT_DIR$/src/main.c" />
         <option value="$PROJECT_DIR$/src/create_xpm.c" />
         <option value="$PROJECT_DIR$/wolf3d.h" />
+        <option value="$PROJECT_DIR$/src/rayCasting.c" />
       </list>
     </option>
   </component>
@@ -455,7 +444,7 @@
       <workItem from="1507904076729" duration="218000" />
       <workItem from="1508767479488" duration="8327000" />
       <workItem from="1508947319055" duration="4788000" />
-      <workItem from="1509108288691" duration="6661000" />
+      <workItem from="1509108288691" duration="12030000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1502816646184</created>
@@ -475,7 +464,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21577000" />
+    <option name="totallyTimeSpent" value="26946000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -523,7 +512,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/rayCasting.c</url>
+          <line>84</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -788,14 +784,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/putPixel.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/findRay.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1560">
@@ -808,22 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="47" lean-forward="false" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rayCasting.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1339">
-          <caret line="105" column="0" lean-forward="false" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/rotate.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
           <folding />
         </state>
       </provider>
@@ -844,6 +816,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/putPixel.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/create_win.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -852,37 +832,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/rotate.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="26" lean-forward="false" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        <state relative-caret-position="654">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/create_image.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="4" lean-forward="true" selection-start-line="19" selection-start-column="4" selection-end-line="20" selection-end-column="78" />
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/create_xpm.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="78" lean-forward="false" selection-start-line="20" selection-start-column="78" selection-end-line="20" selection-end-column="78" />
+        <state relative-caret-position="510">
+          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wolf3d.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+        <state relative-caret-position="450">
+          <caret line="30" column="14" lean-forward="false" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
           <folding>
             <element signature="e#152#172#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/rayCasting.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

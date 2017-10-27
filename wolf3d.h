@@ -14,6 +14,22 @@
 # include <unistd.h>
 # include <stdio.h>
 
+typedef struct s_ray_d
+{
+    int x;
+    double pos_x;
+    double pos_y;
+    double dir_x;
+    double dir_y;
+    int map_x;
+    int map_y;
+    double side_d_x;
+    double side_d_y;
+    double delta_d_x ;
+    double delta_d_y ;
+    int step_x;
+    int step_y;
+}               t_ray_d;
 
 typedef struct s_img
 {
@@ -72,6 +88,6 @@ int					buttons(int keycode, t_data *data);
 void				putImage(t_data *data);
 int					destroy(void);
 int         rotate(int x, int y, t_data *data);
-void			create_xpm(t_mlx *mlx, char *file);
+void			create_xpm(t_mlx *mlx, const char *file);
 
 #endif

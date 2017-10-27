@@ -20,7 +20,7 @@ static void		init(t_data *d)
 		d->h  = 1;
 		create_image(d->mlx);
 //        d->mlx->xpm = (t_xpm *)malloc(sizeof(t_xpm) + 1);
-        create_xpm(d->mlx, "../space.xpm");
+        create_xpm(d->mlx, "space.xpm");
         d->posX = 10;
         d->posY = 12;
         d->dirX = -1;
@@ -52,7 +52,7 @@ int				main(void)
 	//
 	rayCasting(data); //finished
 	mlx_put_image_to_window(data->mlx->mlx, data->mlx->win, data->mlx->im, -1, -1);
-    mlx_put_image_to_window(data->mlx->mlx, data->mlx->win, data->mlx->xpm, -1, -1);
+//    mlx_put_image_to_window(data->mlx->mlx, data->mlx->win, data->mlx->xpm->img->im, -1, -1);
 	//
 	mlx_hook(data->mlx->win, 2, 5, buttons, data);
 	mlx_hook(data->mlx->win, 17, 0, destroy, 0);
