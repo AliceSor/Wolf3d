@@ -24,6 +24,10 @@ stdio.h
 ../wolf3d.h
 /nfs/2016/a/asoroka/Clion_projects/Wolf3d/wolf3d.h
 
+/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/create_xpm.c
+../wolf3d.h
+/nfs/2016/a/asoroka/Clion_projects/Wolf3d/wolf3d.h
+
 /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/findRay.c
 ../wolf3d.h
 /nfs/2016/a/asoroka/Clion_projects/Wolf3d/wolf3d.h

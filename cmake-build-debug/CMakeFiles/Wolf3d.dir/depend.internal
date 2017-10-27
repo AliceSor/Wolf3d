@@ -13,6 +13,9 @@ CMakeFiles/Wolf3d.dir/src/create_image.c.o
 CMakeFiles/Wolf3d.dir/src/create_win.c.o
  /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/create_win.c
  /nfs/2016/a/asoroka/Clion_projects/Wolf3d/wolf3d.h
+CMakeFiles/Wolf3d.dir/src/create_xpm.c.o
+ /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/create_xpm.c
+ /nfs/2016/a/asoroka/Clion_projects/Wolf3d/wolf3d.h
 CMakeFiles/Wolf3d.dir/src/findRay.c.o
  /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/findRay.c
  /nfs/2016/a/asoroka/Clion_projects/Wolf3d/wolf3d.h

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/createMap.c" "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/createMap.c.o"
   "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/create_image.c" "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/create_image.c.o"
   "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/create_win.c" "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/create_win.c.o"
+  "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/create_xpm.c" "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/create_xpm.c.o"
   "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/findRay.c" "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/findRay.c.o"
   "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/main.c" "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/main.c.o"
   "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/putColumn.c" "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/putColumn.c.o"

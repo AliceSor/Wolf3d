@@ -231,6 +231,33 @@ src/create_win.c.s:
 	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/create_win.c.s
 .PHONY : src/create_win.c.s
 
+src/create_xpm.o: src/create_xpm.c.o
+
+.PHONY : src/create_xpm.o
+
+# target to build an object file
+src/create_xpm.c.o:
+	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/create_xpm.c.o
+.PHONY : src/create_xpm.c.o
+
+src/create_xpm.i: src/create_xpm.c.i
+
+.PHONY : src/create_xpm.i
+
+# target to preprocess a source file
+src/create_xpm.c.i:
+	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/create_xpm.c.i
+.PHONY : src/create_xpm.c.i
+
+src/create_xpm.s: src/create_xpm.c.s
+
+.PHONY : src/create_xpm.s
+
+# target to generate assembly for a file
+src/create_xpm.c.s:
+	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/create_xpm.c.s
+.PHONY : src/create_xpm.c.s
+
 src/findRay.o: src/findRay.c.o
 
 .PHONY : src/findRay.o
@@ -414,6 +441,9 @@ help:
 	@echo "... src/create_win.o"
 	@echo "... src/create_win.i"
 	@echo "... src/create_win.s"
+	@echo "... src/create_xpm.o"
+	@echo "... src/create_xpm.i"
+	@echo "... src/create_xpm.s"
 	@echo "... src/findRay.o"
 	@echo "... src/findRay.i"
 	@echo "... src/findRay.s"

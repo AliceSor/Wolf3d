@@ -4,8 +4,8 @@
 
 #ifndef WOLF3D_H
 # define WOLF3D_H
-# define HEIGHT 400
-# define WIDTH 600
+# define HEIGHT 900
+# define WIDTH 1200
 # define RAD 0.01745329251994
 
 # include <stdlib.h>
@@ -14,11 +14,22 @@
 # include <unistd.h>
 # include <stdio.h>
 
+
+typedef struct s_img
+{
+    void        *im;
+    int         *imdata;
+    int         ls;
+}               t_img;
+
 typedef struct s_xpm
 {
     void        *xpm;
     int        *imdata;
     int         ls;
+    int         width;
+    int         height;
+    t_img       *img;
 }               t_xpm;
 
 typedef struct s_mlx
@@ -28,6 +39,7 @@ typedef struct s_mlx
 	void		*im;
 	int			*imdata;
 	int			ls;
+    t_xpm       *xpm;
 }				t_mlx;
 
 typedef struct	s_data
@@ -41,7 +53,7 @@ typedef struct	s_data
     double dirY; //initial direction vector
     double planeX;
     double planeY;
-    int moveSpeed;
+    double moveSpeed;
     double rotSpeed;
     int         mouse_x;
 }				t_data;
@@ -59,6 +71,7 @@ void				createMap(t_data *d);
 int					buttons(int keycode, t_data *data);
 void				putImage(t_data *data);
 int					destroy(void);
-int         rotate(int keycode, int x, int y, t_data *data);
+int         rotate(int x, int y, t_data *data);
+void			create_xpm(t_mlx *mlx, char *file);
 
 #endif

@@ -13,6 +13,9 @@ CMakeFiles/Wolf3d.dir/src/create_image.c.o: ../wolf3d.h
 CMakeFiles/Wolf3d.dir/src/create_win.c.o: ../src/create_win.c
 CMakeFiles/Wolf3d.dir/src/create_win.c.o: ../wolf3d.h
 
+CMakeFiles/Wolf3d.dir/src/create_xpm.c.o: ../src/create_xpm.c
+CMakeFiles/Wolf3d.dir/src/create_xpm.c.o: ../wolf3d.h
+
 CMakeFiles/Wolf3d.dir/src/findRay.c.o: ../src/findRay.c
 CMakeFiles/Wolf3d.dir/src/findRay.c.o: ../wolf3d.h
 

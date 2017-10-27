@@ -94,6 +94,9 @@
 		<Unit filename="/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/create_win.c">
 			<Option target="Wolf3d"/>
 		</Unit>
+		<Unit filename="/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/create_xpm.c">
+			<Option target="Wolf3d"/>
+		</Unit>
 		<Unit filename="/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/findRay.c">
 			<Option target="Wolf3d"/>
 		</Unit>
