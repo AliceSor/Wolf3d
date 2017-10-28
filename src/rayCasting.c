@@ -50,33 +50,68 @@ static void     calc_step(t_ray_d *rd)
     }
 }
 
-static void     draw_column(t_data *data, t_ray_d *rd, double perpWallDist, int side)
+static int set_color(t_data *data, t_ray_d *rd, double wall_dist, int side)
 {
-    int lineHeight = (int)(HEIGHT / perpWallDist);
+    t_color     rgb;
+    int         a;
+    int         color;
 
-    int drawStart = (int)(-lineHeight / 2 + HEIGHT / 2);
+    color = 0;
+    a = 0;
+    if (data->map[rd->map_x][rd->map_y] == 3)
+        a = 0x88000000;
+    if (data->map[rd->map_x][rd->map_y] == 2)
+        a = 0x44000000;
+    if (data->map[rd->map_x][rd->map_y] == 1)
+        a = 0;
+
+    if (side == 0 && rd->dir_x > 0)
+        rgb = up_wall(data);
+    else if (side == 1 && rd->dir_y > 0)
+        rgb = right_wall(data);
+    else if (side == 0 && rd->step_x < 0)
+        rgb = down_wall(data);
+    else
+        rgb = left_wall(data);
+
+    color = integrate_color(rgb.r, rgb.g, rgb.b, 0);
+    color += a;
+    return color;
+}
+
+static void     draw_column(t_data *data, t_ray_d *rd, double wall_dist, int side)
+{
+    int         i;
+
+    int lineHeight;
+    int drawStart;
+    int drawEnd;
+    int color;
+
+    i = -1;
+    lineHeight = (int)(HEIGHT / wall_dist);
+
+    drawStart = -lineHeight / 2 + HEIGHT / 2;
     if(drawStart < 0)
         drawStart = 0;
-    int drawEnd = (int)(lineHeight / 2 + HEIGHT / 2);
+    drawEnd = lineHeight / 2 + HEIGHT / 2;
     if(drawEnd >= HEIGHT)
-        drawEnd = (int)(HEIGHT - 1);
-    int color;
-    switch(data->map[rd->map_x][rd->map_y])
-    {
-        case 1:  color = 0xFF0000;  break; //red
-        case 2:  color = 0x00FF00;  break; //green
-        case 3:  color = 0x0000FF;   break; //blue
-        case 4:  color = 0xFFFFFF;  break; //white
-        default: color = 0xFF00FF; break; //yellow
-    }
+        drawEnd = HEIGHT - 1;
+    color = set_color(data, rd, wall_dist, side);
 
     if (side == 1)
     {
         color = color / 2;
     }
-    for (int i = drawStart; i <= drawEnd; i++)
+    i = drawStart;
+    for (i = drawStart; i <= drawEnd; i++)
     {
         putPixel(rd->x, i, color, data->mlx);
+    }
+    i = drawEnd;
+    for (i = drawEnd; i<= HEIGHT; i++)
+    {
+        putPixel(rd->x, i, 0x44CCBBAA, data->mlx);
     }
 }
 

@@ -10,11 +10,13 @@ set(CMAKE_DEPENDS_CHECK_C
   "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/create_win.c" "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/create_win.c.o"
   "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/create_xpm.c" "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/create_xpm.c.o"
   "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/findRay.c" "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/findRay.c.o"
+  "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/integrate_color.c" "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/integrate_color.c.o"
   "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/main.c" "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/main.c.o"
   "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/putColumn.c" "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/putColumn.c.o"
   "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/putPixel.c" "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/putPixel.c.o"
   "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/rayCasting.c" "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/rayCasting.c.o"
   "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/rotate.c" "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/rotate.c.o"
+  "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/walls_color.c" "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles/Wolf3d.dir/src/walls_color.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

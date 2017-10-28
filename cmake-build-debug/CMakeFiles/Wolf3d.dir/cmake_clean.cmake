@@ -10,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Wolf3d.dir/src/buttons.c.o"
   "CMakeFiles/Wolf3d.dir/src/rotate.c.o"
   "CMakeFiles/Wolf3d.dir/src/create_xpm.c.o"
+  "CMakeFiles/Wolf3d.dir/src/integrate_color.c.o"
+  "CMakeFiles/Wolf3d.dir/src/walls_color.c.o"
   "Wolf3d.pdb"
   "Wolf3d"
 )

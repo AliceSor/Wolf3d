@@ -4,7 +4,7 @@
 
 #ifndef WOLF3D_H
 # define WOLF3D_H
-# define HEIGHT 900
+# define HEIGHT 750
 # define WIDTH 1200
 # define RAD 0.01745329251994
 
@@ -13,6 +13,14 @@
 # include <math.h>
 # include <unistd.h>
 # include <stdio.h>
+
+
+typedef struct		s_color
+{
+    double			r;
+    double			b;
+    double			g;
+}					t_color;
 
 typedef struct s_ray_d
 {
@@ -72,6 +80,7 @@ typedef struct	s_data
     double moveSpeed;
     double rotSpeed;
     int         mouse_x;
+    int         lvl;
 }				t_data;
 
 t_mlx			*create_win(void);
@@ -89,5 +98,11 @@ void				putImage(t_data *data);
 int					destroy(void);
 int         rotate(int x, int y, t_data *data);
 void			create_xpm(t_mlx *mlx, const char *file);
+void        fill_skybox(t_mlx *mlx);
+t_color left_wall(t_data *data);
+t_color right_wall(t_data *data);
+t_color down_wall(t_data *data);
+t_color up_wall(t_data *data);
+int				integrate_color(double r, double g, double b, double a);
 
 #endif

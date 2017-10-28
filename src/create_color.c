@@ -1,36 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   create_image.c                                     :+:      :+:    :+:   */
+/*   create_color.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asoroka <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/16 18:15:57 by asoroka           #+#    #+#             */
-/*   Updated: 2017/10/22 18:55:01 by asoroka          ###   ########.fr       */
+/*   Created: 2017/07/21 18:49:32 by asoroka           #+#    #+#             */
+/*   Updated: 2017/07/21 18:49:33 by asoroka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../wolf3d.h"
 
-static void make_img_transparent(t_mlx *mlx)
+t_color			*create_color(double r, double g, double b)
 {
-    int i;
-    int i_max;
+	t_color		*n_c;
 
-    i = -1;
-    i_max = WIDTH * HEIGHT;
-    while (++i < i_max) {
-        mlx->imdata[i] = 0xFFFFFFFF;
-    }
-}
-
-
-void			create_image(t_mlx *mlx)
-{
-	int			bpss;
-	int			endian;
-
-	mlx->im = mlx_new_image(mlx->mlx, WIDTH, HEIGHT);
-	mlx->imdata = (int *)mlx_get_data_addr(mlx->im, &bpss, &mlx->ls, &endian);
-    make_img_transparent(mlx);
+	n_c = (t_color *)malloc(sizeof(t_color) + 1);
+	if (n_c)
+	{
+		n_c->r = 1 * r / 255;
+		n_c->g = 1 * g / 255;
+		n_c->b = 1 * b / 255;
+		return (n_c);
+	}
+	return (NULL);
 }

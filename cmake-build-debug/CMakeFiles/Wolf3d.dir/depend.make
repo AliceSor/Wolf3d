@@ -19,6 +19,9 @@ CMakeFiles/Wolf3d.dir/src/create_xpm.c.o: ../wolf3d.h
 CMakeFiles/Wolf3d.dir/src/findRay.c.o: ../src/findRay.c
 CMakeFiles/Wolf3d.dir/src/findRay.c.o: ../wolf3d.h
 
+CMakeFiles/Wolf3d.dir/src/integrate_color.c.o: ../src/integrate_color.c
+CMakeFiles/Wolf3d.dir/src/integrate_color.c.o: ../wolf3d.h
+
 CMakeFiles/Wolf3d.dir/src/main.c.o: ../src/main.c
 CMakeFiles/Wolf3d.dir/src/main.c.o: ../wolf3d.h
 
@@ -33,4 +36,7 @@ CMakeFiles/Wolf3d.dir/src/rayCasting.c.o: ../wolf3d.h
 
 CMakeFiles/Wolf3d.dir/src/rotate.c.o: ../src/rotate.c
 CMakeFiles/Wolf3d.dir/src/rotate.c.o: ../wolf3d.h
+
+CMakeFiles/Wolf3d.dir/src/walls_color.c.o: ../src/walls_color.c
+CMakeFiles/Wolf3d.dir/src/walls_color.c.o: ../wolf3d.h
 

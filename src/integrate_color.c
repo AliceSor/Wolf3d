@@ -1,36 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   create_image.c                                     :+:      :+:    :+:   */
+/*   integrate_color.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: asoroka <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/04/16 18:15:57 by asoroka           #+#    #+#             */
-/*   Updated: 2017/10/22 18:55:01 by asoroka          ###   ########.fr       */
+/*   Created: 2017/07/21 18:49:44 by asoroka           #+#    #+#             */
+/*   Updated: 2017/07/21 18:49:45 by asoroka          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../wolf3d.h"
 
-static void make_img_transparent(t_mlx *mlx)
+int				integrate_color(double r, double g, double b, double a)
 {
-    int i;
-    int i_max;
+	int			res;
 
-    i = -1;
-    i_max = WIDTH * HEIGHT;
-    while (++i < i_max) {
-        mlx->imdata[i] = 0xFFFFFFFF;
-    }
-}
-
-
-void			create_image(t_mlx *mlx)
-{
-	int			bpss;
-	int			endian;
-
-	mlx->im = mlx_new_image(mlx->mlx, WIDTH, HEIGHT);
-	mlx->imdata = (int *)mlx_get_data_addr(mlx->im, &bpss, &mlx->ls, &endian);
-    make_img_transparent(mlx);
+//	r = (r / 100) * 255;
+//	g = (g / 100) * 255;
+//	b = (b / 100) * 255;
+//	r = (r < 255) ? r : 255;
+//	g = (g < 255) ? g : 255;
+//	b = (b < 255) ? b : 255;
+	res = ((int)r << 16) + ((int)g << 8) + (int)b + (int)a;
+	return (res);
 }

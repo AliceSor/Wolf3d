@@ -12,6 +12,15 @@
 
 #include "../wolf3d.h"
 
+//static void make_img_transparent(t_mlx *mlx)
+//{
+//    int i;
+//
+//    i = -1;
+//    while (mlx->imdata[++i])
+//        mlx->imdata[i] = 0xFF000000;
+//}
+
 static void		init(t_data *d)
 {
 	if (d)
@@ -19,7 +28,8 @@ static void		init(t_data *d)
 		d->mlx = create_win();
 		d->h  = 1;
 		create_image(d->mlx);
-//        d->mlx->xpm = (t_xpm *)malloc(sizeof(t_xpm) + 1);
+//        make_img_transparent(d->mlx);
+        d->mlx->xpm = (t_xpm *)malloc(sizeof(t_xpm) + 1);
         create_xpm(d->mlx, "space.xpm");
         d->posX = 10;
         d->posY = 12;
@@ -30,6 +40,7 @@ static void		init(t_data *d)
         d->moveSpeed = 0.5;
         d->rotSpeed = 3 * RAD;
         d->mouse_x = 0;
+        d->lvl = 0;
         createMap(d);
 	}
 }
@@ -50,9 +61,10 @@ int				main(void)
 	//	return (0);
 	//}
 	//
-	rayCasting(data); //finished
+	rayCasting(data);
+    mlx_put_image_to_window(data->mlx->mlx, data->mlx->win, data->mlx->xpm->img->im, -1, -1);
 	mlx_put_image_to_window(data->mlx->mlx, data->mlx->win, data->mlx->im, -1, -1);
-//    mlx_put_image_to_window(data->mlx->mlx, data->mlx->win, data->mlx->xpm->img->im, -1, -1);
+
 	//
 	mlx_hook(data->mlx->win, 2, 5, buttons, data);
 	mlx_hook(data->mlx->win, 17, 0, destroy, 0);

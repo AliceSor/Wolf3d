@@ -285,6 +285,33 @@ src/findRay.c.s:
 	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/findRay.c.s
 .PHONY : src/findRay.c.s
 
+src/integrate_color.o: src/integrate_color.c.o
+
+.PHONY : src/integrate_color.o
+
+# target to build an object file
+src/integrate_color.c.o:
+	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/integrate_color.c.o
+.PHONY : src/integrate_color.c.o
+
+src/integrate_color.i: src/integrate_color.c.i
+
+.PHONY : src/integrate_color.i
+
+# target to preprocess a source file
+src/integrate_color.c.i:
+	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/integrate_color.c.i
+.PHONY : src/integrate_color.c.i
+
+src/integrate_color.s: src/integrate_color.c.s
+
+.PHONY : src/integrate_color.s
+
+# target to generate assembly for a file
+src/integrate_color.c.s:
+	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/integrate_color.c.s
+.PHONY : src/integrate_color.c.s
+
 src/main.o: src/main.c.o
 
 .PHONY : src/main.o
@@ -420,6 +447,33 @@ src/rotate.c.s:
 	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/rotate.c.s
 .PHONY : src/rotate.c.s
 
+src/walls_color.o: src/walls_color.c.o
+
+.PHONY : src/walls_color.o
+
+# target to build an object file
+src/walls_color.c.o:
+	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/walls_color.c.o
+.PHONY : src/walls_color.c.o
+
+src/walls_color.i: src/walls_color.c.i
+
+.PHONY : src/walls_color.i
+
+# target to preprocess a source file
+src/walls_color.c.i:
+	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/walls_color.c.i
+.PHONY : src/walls_color.c.i
+
+src/walls_color.s: src/walls_color.c.s
+
+.PHONY : src/walls_color.s
+
+# target to generate assembly for a file
+src/walls_color.c.s:
+	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/walls_color.c.s
+.PHONY : src/walls_color.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -447,6 +501,9 @@ help:
 	@echo "... src/findRay.o"
 	@echo "... src/findRay.i"
 	@echo "... src/findRay.s"
+	@echo "... src/integrate_color.o"
+	@echo "... src/integrate_color.i"
+	@echo "... src/integrate_color.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -462,6 +519,9 @@ help:
 	@echo "... src/rotate.o"
 	@echo "... src/rotate.i"
 	@echo "... src/rotate.s"
+	@echo "... src/walls_color.o"
+	@echo "... src/walls_color.i"
+	@echo "... src/walls_color.s"
 .PHONY : help
 
 

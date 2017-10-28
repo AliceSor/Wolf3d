@@ -52,8 +52,8 @@ void			createMap(t_data *d)
 		printf("\n");
 	}
 
-//	d->map[33][20] = 2;
-//	d->map[33][21] = 3;
+	d->map[5][5] = 2;
+	d->map[11][10] = 3;
 //	d->map[33][22] = 4;
 //	d->map[33][23] = 1;
 //	return (map);

@@ -321,6 +321,54 @@ CMakeFiles/Wolf3d.dir/src/create_xpm.c.o.provides: CMakeFiles/Wolf3d.dir/src/cre
 CMakeFiles/Wolf3d.dir/src/create_xpm.c.o.provides.build: CMakeFiles/Wolf3d.dir/src/create_xpm.c.o
 
 
+CMakeFiles/Wolf3d.dir/src/integrate_color.c.o: CMakeFiles/Wolf3d.dir/flags.make
+CMakeFiles/Wolf3d.dir/src/integrate_color.c.o: ../src/integrate_color.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Wolf3d.dir/src/integrate_color.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3d.dir/src/integrate_color.c.o   -c /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/integrate_color.c
+
+CMakeFiles/Wolf3d.dir/src/integrate_color.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Wolf3d.dir/src/integrate_color.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/integrate_color.c > CMakeFiles/Wolf3d.dir/src/integrate_color.c.i
+
+CMakeFiles/Wolf3d.dir/src/integrate_color.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Wolf3d.dir/src/integrate_color.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/integrate_color.c -o CMakeFiles/Wolf3d.dir/src/integrate_color.c.s
+
+CMakeFiles/Wolf3d.dir/src/integrate_color.c.o.requires:
+
+.PHONY : CMakeFiles/Wolf3d.dir/src/integrate_color.c.o.requires
+
+CMakeFiles/Wolf3d.dir/src/integrate_color.c.o.provides: CMakeFiles/Wolf3d.dir/src/integrate_color.c.o.requires
+	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/integrate_color.c.o.provides.build
+.PHONY : CMakeFiles/Wolf3d.dir/src/integrate_color.c.o.provides
+
+CMakeFiles/Wolf3d.dir/src/integrate_color.c.o.provides.build: CMakeFiles/Wolf3d.dir/src/integrate_color.c.o
+
+
+CMakeFiles/Wolf3d.dir/src/walls_color.c.o: CMakeFiles/Wolf3d.dir/flags.make
+CMakeFiles/Wolf3d.dir/src/walls_color.c.o: ../src/walls_color.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/Wolf3d.dir/src/walls_color.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3d.dir/src/walls_color.c.o   -c /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/walls_color.c
+
+CMakeFiles/Wolf3d.dir/src/walls_color.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Wolf3d.dir/src/walls_color.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/walls_color.c > CMakeFiles/Wolf3d.dir/src/walls_color.c.i
+
+CMakeFiles/Wolf3d.dir/src/walls_color.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Wolf3d.dir/src/walls_color.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/walls_color.c -o CMakeFiles/Wolf3d.dir/src/walls_color.c.s
+
+CMakeFiles/Wolf3d.dir/src/walls_color.c.o.requires:
+
+.PHONY : CMakeFiles/Wolf3d.dir/src/walls_color.c.o.requires
+
+CMakeFiles/Wolf3d.dir/src/walls_color.c.o.provides: CMakeFiles/Wolf3d.dir/src/walls_color.c.o.requires
+	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/walls_color.c.o.provides.build
+.PHONY : CMakeFiles/Wolf3d.dir/src/walls_color.c.o.provides
+
+CMakeFiles/Wolf3d.dir/src/walls_color.c.o.provides.build: CMakeFiles/Wolf3d.dir/src/walls_color.c.o
+
+
 # Object files for target Wolf3d
 Wolf3d_OBJECTS = \
 "CMakeFiles/Wolf3d.dir/src/main.c.o" \
@@ -333,7 +381,9 @@ Wolf3d_OBJECTS = \
 "CMakeFiles/Wolf3d.dir/src/rayCasting.c.o" \
 "CMakeFiles/Wolf3d.dir/src/buttons.c.o" \
 "CMakeFiles/Wolf3d.dir/src/rotate.c.o" \
-"CMakeFiles/Wolf3d.dir/src/create_xpm.c.o"
+"CMakeFiles/Wolf3d.dir/src/create_xpm.c.o" \
+"CMakeFiles/Wolf3d.dir/src/integrate_color.c.o" \
+"CMakeFiles/Wolf3d.dir/src/walls_color.c.o"
 
 # External object files for target Wolf3d
 Wolf3d_EXTERNAL_OBJECTS =
@@ -349,9 +399,11 @@ Wolf3d: CMakeFiles/Wolf3d.dir/src/rayCasting.c.o
 Wolf3d: CMakeFiles/Wolf3d.dir/src/buttons.c.o
 Wolf3d: CMakeFiles/Wolf3d.dir/src/rotate.c.o
 Wolf3d: CMakeFiles/Wolf3d.dir/src/create_xpm.c.o
+Wolf3d: CMakeFiles/Wolf3d.dir/src/integrate_color.c.o
+Wolf3d: CMakeFiles/Wolf3d.dir/src/walls_color.c.o
 Wolf3d: CMakeFiles/Wolf3d.dir/build.make
 Wolf3d: CMakeFiles/Wolf3d.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable Wolf3d"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C executable Wolf3d"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Wolf3d.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -370,6 +422,8 @@ CMakeFiles/Wolf3d.dir/requires: CMakeFiles/Wolf3d.dir/src/rayCasting.c.o.require
 CMakeFiles/Wolf3d.dir/requires: CMakeFiles/Wolf3d.dir/src/buttons.c.o.requires
 CMakeFiles/Wolf3d.dir/requires: CMakeFiles/Wolf3d.dir/src/rotate.c.o.requires
 CMakeFiles/Wolf3d.dir/requires: CMakeFiles/Wolf3d.dir/src/create_xpm.c.o.requires
+CMakeFiles/Wolf3d.dir/requires: CMakeFiles/Wolf3d.dir/src/integrate_color.c.o.requires
+CMakeFiles/Wolf3d.dir/requires: CMakeFiles/Wolf3d.dir/src/walls_color.c.o.requires
 
 .PHONY : CMakeFiles/Wolf3d.dir/requires
 

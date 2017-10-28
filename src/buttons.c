@@ -20,6 +20,7 @@ void				putImage(t_data *d)
         mlx_destroy_image(d->mlx->mlx, d->mlx->im);
         create_image(d->mlx);
         rayCasting(d);
+        mlx_put_image_to_window(d->mlx->mlx, d->mlx->win, d->mlx->xpm->img->im, -1, -1);
         mlx_put_image_to_window(d->mlx->mlx, d->mlx->win, d->mlx->im, 0, 0);
     }
 }
