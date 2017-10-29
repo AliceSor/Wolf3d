@@ -11,8 +11,8 @@ set(SOURCE_FILES
 src/create_win.c
 src/putPixel.c
 src/createMap.c
-src/findRay.c
-src/putColumn.c
+
+
 src/rayCasting.c
         src/buttons.c src/rotate.c src/create_xpm.c
         src/integrate_color.c

@@ -64,45 +64,49 @@ typedef struct s_mlx
 	int			*imdata;
 	int			ls;
     t_xpm       *xpm;
+    t_xpm       *lvl0;
+    t_xpm       *lvl1;
+    t_xpm       *lvl2;
+    t_xpm       *start;
 }				t_mlx;
 
 typedef struct	s_data
 {
 	t_mlx		*mlx;
 	int			**map;
-	double		h;
     double      posX;
     double      posY;  //x and y start position
     double dirX;
     double dirY; //initial direction vector
     double planeX;
     double planeY;
-    double moveSpeed;
-    double rotSpeed;
+    double move_speed;
+    double rot_speed;
     int         mouse_x;
     int         lvl;
+    int         start;
+    int         rot;
+    int         floor_a;
+    int         roof_a;
 }				t_data;
 
 t_mlx			*create_win(void);
 void			create_image(t_mlx *mlx);
-void			putPixel(int x, int y, int color, t_mlx *mlx);
+void			put_pixel(int x, int y, int color, t_mlx *mlx);
 void			rayCasting(t_data *data);
-void			putColum(t_data *data, double dist);
-void			putColumn(t_data *data, int x, double dist);
 int				parseMap(t_data *data);
-double			rayHorizontal(t_data *data, double angle);
-double			rayVertical(t_data *data, double angle);
 void				createMap(t_data *d);
 int					buttons(int keycode, t_data *data);
 void				putImage(t_data *data);
 int					destroy(void);
 int         rotate(int x, int y, t_data *data);
-void			create_xpm(t_mlx *mlx, const char *file);
+void        create_xpm(t_mlx *mlx, int lvl);
+void			create_start_screen(t_mlx *mlx);
 void        fill_skybox(t_mlx *mlx);
 t_color left_wall(t_data *data);
 t_color right_wall(t_data *data);
 t_color down_wall(t_data *data);
 t_color up_wall(t_data *data);
-int				integrate_color(double r, double g, double b, double a);
+int				integrate_color(double r, double g, double b);
 
 #endif

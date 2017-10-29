@@ -10,18 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../wolf3d.h"
 
-int				integrate_color(double r, double g, double b, double a)
+int				integrate_color(double r, double g, double b)
 {
 	int			res;
 
-//	r = (r / 100) * 255;
-//	g = (g / 100) * 255;
-//	b = (b / 100) * 255;
-//	r = (r < 255) ? r : 255;
-//	g = (g < 255) ? g : 255;
-//	b = (b < 255) ? b : 255;
-	res = ((int)r << 16) + ((int)g << 8) + (int)b + (int)a;
+	r = (r < 255) ? r : r/255;
+	g = (g < 255) ? g : g/255;
+	b = (b < 255) ? b : b/255;
+    r = (r > 0) ? r : 0;
+    g = (g > 0) ? g : 0;
+    b = (b > 0) ? b : 0;
+	res = ((int)r << 16) + ((int)g << 8) + (int)b;
 	return (res);
 }

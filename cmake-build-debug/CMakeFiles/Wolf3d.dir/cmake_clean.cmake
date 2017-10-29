@@ -4,8 +4,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/Wolf3d.dir/src/create_win.c.o"
   "CMakeFiles/Wolf3d.dir/src/putPixel.c.o"
   "CMakeFiles/Wolf3d.dir/src/createMap.c.o"
-  "CMakeFiles/Wolf3d.dir/src/findRay.c.o"
-  "CMakeFiles/Wolf3d.dir/src/putColumn.c.o"
   "CMakeFiles/Wolf3d.dir/src/rayCasting.c.o"
   "CMakeFiles/Wolf3d.dir/src/buttons.c.o"
   "CMakeFiles/Wolf3d.dir/src/rotate.c.o"

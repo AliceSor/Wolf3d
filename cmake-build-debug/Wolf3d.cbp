@@ -97,16 +97,10 @@
 		<Unit filename="/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/create_xpm.c">
 			<Option target="Wolf3d"/>
 		</Unit>
-		<Unit filename="/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/findRay.c">
-			<Option target="Wolf3d"/>
-		</Unit>
 		<Unit filename="/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/integrate_color.c">
 			<Option target="Wolf3d"/>
 		</Unit>
 		<Unit filename="/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/main.c">
-			<Option target="Wolf3d"/>
-		</Unit>
-		<Unit filename="/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/putColumn.c">
 			<Option target="Wolf3d"/>
 		</Unit>
 		<Unit filename="/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/putPixel.c">

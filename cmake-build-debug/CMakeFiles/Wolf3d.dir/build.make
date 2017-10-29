@@ -177,57 +177,9 @@ CMakeFiles/Wolf3d.dir/src/createMap.c.o.provides: CMakeFiles/Wolf3d.dir/src/crea
 CMakeFiles/Wolf3d.dir/src/createMap.c.o.provides.build: CMakeFiles/Wolf3d.dir/src/createMap.c.o
 
 
-CMakeFiles/Wolf3d.dir/src/findRay.c.o: CMakeFiles/Wolf3d.dir/flags.make
-CMakeFiles/Wolf3d.dir/src/findRay.c.o: ../src/findRay.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Wolf3d.dir/src/findRay.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3d.dir/src/findRay.c.o   -c /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/findRay.c
-
-CMakeFiles/Wolf3d.dir/src/findRay.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Wolf3d.dir/src/findRay.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/findRay.c > CMakeFiles/Wolf3d.dir/src/findRay.c.i
-
-CMakeFiles/Wolf3d.dir/src/findRay.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Wolf3d.dir/src/findRay.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/findRay.c -o CMakeFiles/Wolf3d.dir/src/findRay.c.s
-
-CMakeFiles/Wolf3d.dir/src/findRay.c.o.requires:
-
-.PHONY : CMakeFiles/Wolf3d.dir/src/findRay.c.o.requires
-
-CMakeFiles/Wolf3d.dir/src/findRay.c.o.provides: CMakeFiles/Wolf3d.dir/src/findRay.c.o.requires
-	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/findRay.c.o.provides.build
-.PHONY : CMakeFiles/Wolf3d.dir/src/findRay.c.o.provides
-
-CMakeFiles/Wolf3d.dir/src/findRay.c.o.provides.build: CMakeFiles/Wolf3d.dir/src/findRay.c.o
-
-
-CMakeFiles/Wolf3d.dir/src/putColumn.c.o: CMakeFiles/Wolf3d.dir/flags.make
-CMakeFiles/Wolf3d.dir/src/putColumn.c.o: ../src/putColumn.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Wolf3d.dir/src/putColumn.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3d.dir/src/putColumn.c.o   -c /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/putColumn.c
-
-CMakeFiles/Wolf3d.dir/src/putColumn.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Wolf3d.dir/src/putColumn.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/putColumn.c > CMakeFiles/Wolf3d.dir/src/putColumn.c.i
-
-CMakeFiles/Wolf3d.dir/src/putColumn.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Wolf3d.dir/src/putColumn.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/putColumn.c -o CMakeFiles/Wolf3d.dir/src/putColumn.c.s
-
-CMakeFiles/Wolf3d.dir/src/putColumn.c.o.requires:
-
-.PHONY : CMakeFiles/Wolf3d.dir/src/putColumn.c.o.requires
-
-CMakeFiles/Wolf3d.dir/src/putColumn.c.o.provides: CMakeFiles/Wolf3d.dir/src/putColumn.c.o.requires
-	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/putColumn.c.o.provides.build
-.PHONY : CMakeFiles/Wolf3d.dir/src/putColumn.c.o.provides
-
-CMakeFiles/Wolf3d.dir/src/putColumn.c.o.provides.build: CMakeFiles/Wolf3d.dir/src/putColumn.c.o
-
-
 CMakeFiles/Wolf3d.dir/src/rayCasting.c.o: CMakeFiles/Wolf3d.dir/flags.make
 CMakeFiles/Wolf3d.dir/src/rayCasting.c.o: ../src/rayCasting.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Wolf3d.dir/src/rayCasting.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/Wolf3d.dir/src/rayCasting.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3d.dir/src/rayCasting.c.o   -c /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/rayCasting.c
 
 CMakeFiles/Wolf3d.dir/src/rayCasting.c.i: cmake_force
@@ -251,7 +203,7 @@ CMakeFiles/Wolf3d.dir/src/rayCasting.c.o.provides.build: CMakeFiles/Wolf3d.dir/s
 
 CMakeFiles/Wolf3d.dir/src/buttons.c.o: CMakeFiles/Wolf3d.dir/flags.make
 CMakeFiles/Wolf3d.dir/src/buttons.c.o: ../src/buttons.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Wolf3d.dir/src/buttons.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/Wolf3d.dir/src/buttons.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3d.dir/src/buttons.c.o   -c /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/buttons.c
 
 CMakeFiles/Wolf3d.dir/src/buttons.c.i: cmake_force
@@ -275,7 +227,7 @@ CMakeFiles/Wolf3d.dir/src/buttons.c.o.provides.build: CMakeFiles/Wolf3d.dir/src/
 
 CMakeFiles/Wolf3d.dir/src/rotate.c.o: CMakeFiles/Wolf3d.dir/flags.make
 CMakeFiles/Wolf3d.dir/src/rotate.c.o: ../src/rotate.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Wolf3d.dir/src/rotate.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/Wolf3d.dir/src/rotate.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3d.dir/src/rotate.c.o   -c /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/rotate.c
 
 CMakeFiles/Wolf3d.dir/src/rotate.c.i: cmake_force
@@ -299,7 +251,7 @@ CMakeFiles/Wolf3d.dir/src/rotate.c.o.provides.build: CMakeFiles/Wolf3d.dir/src/r
 
 CMakeFiles/Wolf3d.dir/src/create_xpm.c.o: CMakeFiles/Wolf3d.dir/flags.make
 CMakeFiles/Wolf3d.dir/src/create_xpm.c.o: ../src/create_xpm.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Wolf3d.dir/src/create_xpm.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/Wolf3d.dir/src/create_xpm.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3d.dir/src/create_xpm.c.o   -c /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/create_xpm.c
 
 CMakeFiles/Wolf3d.dir/src/create_xpm.c.i: cmake_force
@@ -323,7 +275,7 @@ CMakeFiles/Wolf3d.dir/src/create_xpm.c.o.provides.build: CMakeFiles/Wolf3d.dir/s
 
 CMakeFiles/Wolf3d.dir/src/integrate_color.c.o: CMakeFiles/Wolf3d.dir/flags.make
 CMakeFiles/Wolf3d.dir/src/integrate_color.c.o: ../src/integrate_color.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/Wolf3d.dir/src/integrate_color.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/Wolf3d.dir/src/integrate_color.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3d.dir/src/integrate_color.c.o   -c /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/integrate_color.c
 
 CMakeFiles/Wolf3d.dir/src/integrate_color.c.i: cmake_force
@@ -347,7 +299,7 @@ CMakeFiles/Wolf3d.dir/src/integrate_color.c.o.provides.build: CMakeFiles/Wolf3d.
 
 CMakeFiles/Wolf3d.dir/src/walls_color.c.o: CMakeFiles/Wolf3d.dir/flags.make
 CMakeFiles/Wolf3d.dir/src/walls_color.c.o: ../src/walls_color.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/Wolf3d.dir/src/walls_color.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/Wolf3d.dir/src/walls_color.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Wolf3d.dir/src/walls_color.c.o   -c /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/walls_color.c
 
 CMakeFiles/Wolf3d.dir/src/walls_color.c.i: cmake_force
@@ -376,8 +328,6 @@ Wolf3d_OBJECTS = \
 "CMakeFiles/Wolf3d.dir/src/create_win.c.o" \
 "CMakeFiles/Wolf3d.dir/src/putPixel.c.o" \
 "CMakeFiles/Wolf3d.dir/src/createMap.c.o" \
-"CMakeFiles/Wolf3d.dir/src/findRay.c.o" \
-"CMakeFiles/Wolf3d.dir/src/putColumn.c.o" \
 "CMakeFiles/Wolf3d.dir/src/rayCasting.c.o" \
 "CMakeFiles/Wolf3d.dir/src/buttons.c.o" \
 "CMakeFiles/Wolf3d.dir/src/rotate.c.o" \
@@ -393,8 +343,6 @@ Wolf3d: CMakeFiles/Wolf3d.dir/src/create_image.c.o
 Wolf3d: CMakeFiles/Wolf3d.dir/src/create_win.c.o
 Wolf3d: CMakeFiles/Wolf3d.dir/src/putPixel.c.o
 Wolf3d: CMakeFiles/Wolf3d.dir/src/createMap.c.o
-Wolf3d: CMakeFiles/Wolf3d.dir/src/findRay.c.o
-Wolf3d: CMakeFiles/Wolf3d.dir/src/putColumn.c.o
 Wolf3d: CMakeFiles/Wolf3d.dir/src/rayCasting.c.o
 Wolf3d: CMakeFiles/Wolf3d.dir/src/buttons.c.o
 Wolf3d: CMakeFiles/Wolf3d.dir/src/rotate.c.o
@@ -403,7 +351,7 @@ Wolf3d: CMakeFiles/Wolf3d.dir/src/integrate_color.c.o
 Wolf3d: CMakeFiles/Wolf3d.dir/src/walls_color.c.o
 Wolf3d: CMakeFiles/Wolf3d.dir/build.make
 Wolf3d: CMakeFiles/Wolf3d.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C executable Wolf3d"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/nfs/2016/a/asoroka/Clion_projects/Wolf3d/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable Wolf3d"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Wolf3d.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -416,8 +364,6 @@ CMakeFiles/Wolf3d.dir/requires: CMakeFiles/Wolf3d.dir/src/create_image.c.o.requi
 CMakeFiles/Wolf3d.dir/requires: CMakeFiles/Wolf3d.dir/src/create_win.c.o.requires
 CMakeFiles/Wolf3d.dir/requires: CMakeFiles/Wolf3d.dir/src/putPixel.c.o.requires
 CMakeFiles/Wolf3d.dir/requires: CMakeFiles/Wolf3d.dir/src/createMap.c.o.requires
-CMakeFiles/Wolf3d.dir/requires: CMakeFiles/Wolf3d.dir/src/findRay.c.o.requires
-CMakeFiles/Wolf3d.dir/requires: CMakeFiles/Wolf3d.dir/src/putColumn.c.o.requires
 CMakeFiles/Wolf3d.dir/requires: CMakeFiles/Wolf3d.dir/src/rayCasting.c.o.requires
 CMakeFiles/Wolf3d.dir/requires: CMakeFiles/Wolf3d.dir/src/buttons.c.o.requires
 CMakeFiles/Wolf3d.dir/requires: CMakeFiles/Wolf3d.dir/src/rotate.c.o.requires

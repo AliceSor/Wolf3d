@@ -56,14 +56,14 @@ static int set_color(t_data *data, t_ray_d *rd, double wall_dist, int side)
     int         a;
     int         color;
 
-    color = 0;
-    a = 0;
     if (data->map[rd->map_x][rd->map_y] == 3)
-        a = 0x88000000;
-    if (data->map[rd->map_x][rd->map_y] == 2)
-        a = 0x44000000;
-    if (data->map[rd->map_x][rd->map_y] == 1)
+        a = 0x66000000;
+    else if (data->map[rd->map_x][rd->map_y] == 2)
+        a = 0x22000000;
+    else if (data->map[rd->map_x][rd->map_y] == 1)
         a = 0;
+    else
+        a = 0xFF000000;
 
     if (side == 0 && rd->dir_x > 0)
         rgb = up_wall(data);
@@ -74,7 +74,17 @@ static int set_color(t_data *data, t_ray_d *rd, double wall_dist, int side)
     else
         rgb = left_wall(data);
 
-    color = integrate_color(rgb.r, rgb.g, rgb.b, 0);
+
+    rgb.r = rgb.r - wall_dist * 10;
+    rgb.g = rgb.g - wall_dist * 10;
+    rgb.b = rgb.b - wall_dist* 10;
+        if (side == 1)
+    {
+        rgb.r -= 30;
+        rgb.g -= 30;
+        rgb.b -= 30;
+    }
+    color = integrate_color(rgb.r, rgb.g, rgb.b);
     color += a;
     return color;
 }
@@ -98,20 +108,17 @@ static void     draw_column(t_data *data, t_ray_d *rd, double wall_dist, int sid
     if(drawEnd >= HEIGHT)
         drawEnd = HEIGHT - 1;
     color = set_color(data, rd, wall_dist, side);
-
-    if (side == 1)
-    {
-        color = color / 2;
-    }
+    while (++i <= drawStart)
+        put_pixel(rd->x, i, 0xAAAAAA + data->roof_a, data->mlx);
     i = drawStart;
     for (i = drawStart; i <= drawEnd; i++)
     {
-        putPixel(rd->x, i, color, data->mlx);
+        put_pixel(rd->x, i, color, data->mlx);
     }
     i = drawEnd;
     for (i = drawEnd; i<= HEIGHT; i++)
     {
-        putPixel(rd->x, i, 0x44CCBBAA, data->mlx);
+        put_pixel(rd->x, i, 0x777788 + data->floor_a - ((HEIGHT - i)/10 << 16) - ((HEIGHT - i)/10 << 8) - ((HEIGHT - i)/10), data->mlx);
     }
 }
 
@@ -132,7 +139,7 @@ void			rayCasting(t_data *data)
         calc_step(rd);
         side = 0;
         hit = 0;
-        while (hit == 0)
+        while (hit == 0 && rd->map_x < 22)
         {
             if (rd->side_d_x < rd->side_d_y)
             {
@@ -155,7 +162,6 @@ void			rayCasting(t_data *data)
             wall_dist = (rd->map_x - rd->pos_x + (1 - rd->step_x) / 2) / rd->dir_x;
         else
             wall_dist = (rd->map_y - rd->pos_y + (1 - rd->step_y) / 2) / rd->dir_y;
-
         draw_column(data, rd, wall_dist, side);
     }
 }

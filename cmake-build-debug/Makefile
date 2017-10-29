@@ -258,33 +258,6 @@ src/create_xpm.c.s:
 	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/create_xpm.c.s
 .PHONY : src/create_xpm.c.s
 
-src/findRay.o: src/findRay.c.o
-
-.PHONY : src/findRay.o
-
-# target to build an object file
-src/findRay.c.o:
-	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/findRay.c.o
-.PHONY : src/findRay.c.o
-
-src/findRay.i: src/findRay.c.i
-
-.PHONY : src/findRay.i
-
-# target to preprocess a source file
-src/findRay.c.i:
-	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/findRay.c.i
-.PHONY : src/findRay.c.i
-
-src/findRay.s: src/findRay.c.s
-
-.PHONY : src/findRay.s
-
-# target to generate assembly for a file
-src/findRay.c.s:
-	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/findRay.c.s
-.PHONY : src/findRay.c.s
-
 src/integrate_color.o: src/integrate_color.c.o
 
 .PHONY : src/integrate_color.o
@@ -338,33 +311,6 @@ src/main.s: src/main.c.s
 src/main.c.s:
 	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/main.c.s
 .PHONY : src/main.c.s
-
-src/putColumn.o: src/putColumn.c.o
-
-.PHONY : src/putColumn.o
-
-# target to build an object file
-src/putColumn.c.o:
-	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/putColumn.c.o
-.PHONY : src/putColumn.c.o
-
-src/putColumn.i: src/putColumn.c.i
-
-.PHONY : src/putColumn.i
-
-# target to preprocess a source file
-src/putColumn.c.i:
-	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/putColumn.c.i
-.PHONY : src/putColumn.c.i
-
-src/putColumn.s: src/putColumn.c.s
-
-.PHONY : src/putColumn.s
-
-# target to generate assembly for a file
-src/putColumn.c.s:
-	$(MAKE) -f CMakeFiles/Wolf3d.dir/build.make CMakeFiles/Wolf3d.dir/src/putColumn.c.s
-.PHONY : src/putColumn.c.s
 
 src/putPixel.o: src/putPixel.c.o
 
@@ -498,18 +444,12 @@ help:
 	@echo "... src/create_xpm.o"
 	@echo "... src/create_xpm.i"
 	@echo "... src/create_xpm.s"
-	@echo "... src/findRay.o"
-	@echo "... src/findRay.i"
-	@echo "... src/findRay.s"
 	@echo "... src/integrate_color.o"
 	@echo "... src/integrate_color.i"
 	@echo "... src/integrate_color.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/putColumn.o"
-	@echo "... src/putColumn.i"
-	@echo "... src/putColumn.s"
 	@echo "... src/putPixel.o"
 	@echo "... src/putPixel.i"
 	@echo "... src/putPixel.s"

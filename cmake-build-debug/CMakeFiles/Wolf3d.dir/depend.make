@@ -16,17 +16,10 @@ CMakeFiles/Wolf3d.dir/src/create_win.c.o: ../wolf3d.h
 CMakeFiles/Wolf3d.dir/src/create_xpm.c.o: ../src/create_xpm.c
 CMakeFiles/Wolf3d.dir/src/create_xpm.c.o: ../wolf3d.h
 
-CMakeFiles/Wolf3d.dir/src/findRay.c.o: ../src/findRay.c
-CMakeFiles/Wolf3d.dir/src/findRay.c.o: ../wolf3d.h
-
 CMakeFiles/Wolf3d.dir/src/integrate_color.c.o: ../src/integrate_color.c
-CMakeFiles/Wolf3d.dir/src/integrate_color.c.o: ../wolf3d.h
 
 CMakeFiles/Wolf3d.dir/src/main.c.o: ../src/main.c
 CMakeFiles/Wolf3d.dir/src/main.c.o: ../wolf3d.h
-
-CMakeFiles/Wolf3d.dir/src/putColumn.c.o: ../src/putColumn.c
-CMakeFiles/Wolf3d.dir/src/putColumn.c.o: ../wolf3d.h
 
 CMakeFiles/Wolf3d.dir/src/putPixel.c.o: ../src/putPixel.c
 CMakeFiles/Wolf3d.dir/src/putPixel.c.o: ../wolf3d.h

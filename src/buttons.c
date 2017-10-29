@@ -20,8 +20,8 @@ void				putImage(t_data *d)
         mlx_destroy_image(d->mlx->mlx, d->mlx->im);
         create_image(d->mlx);
         rayCasting(d);
-        mlx_put_image_to_window(d->mlx->mlx, d->mlx->win, d->mlx->xpm->img->im, -1, -1);
-        mlx_put_image_to_window(d->mlx->mlx, d->mlx->win, d->mlx->im, 0, 0);
+        mlx_put_image_to_window(d->mlx->mlx, d->mlx->win, d->mlx->xpm->img->im, d->rot, -1);
+        mlx_put_image_to_window(d->mlx->mlx, d->mlx->win, d->mlx->im, -1, -1);
     }
 }
 
@@ -32,41 +32,54 @@ int					destroy(void)
 
 int					buttons(int keycode, t_data *d)
 {
-	if (keycode == 49)
-		d->h +=10;
-	if (keycode == 126 || keycode == 13)
-	{
-		if(d->map[(int)(d->posX + d->dirX * d->moveSpeed)][(int)d->posY] == 0)
-			d->posX += d->dirX * d->moveSpeed;
-		if(d->map[(int)(d->posX)][(int)(d->posY + d->dirY * d->moveSpeed)] == 0)
-			d->posY += d->dirY * d->moveSpeed;
-	}
-	//move backwards if no wall behind you
-	if (keycode == 125 || keycode == 1)
-	{
-		if(d->map[(int)(d->posX - d->dirX * d->moveSpeed)][(int)d->posY] == 0)
-			d->posX -= d->dirX * d->moveSpeed;
-		if(d->map[(int)(d->posX)][(int)(d->posY - d->dirY * d->moveSpeed)] == 0)
-			d->posY -= d->dirY * d->moveSpeed;
-	}
-	//rotate to the right
-	if (keycode == 124)
-	{
-		//both camera direction and camera plane must be rotated
-        if(d->map[(int)(d->posX - d->dirX * d->moveSpeed)][(int)d->posY] == 0)
-            d->posX -= d->dirX * d->moveSpeed;
-        if(d->map[(int)(d->posX)][(int)(d->posY - d->dirY * d->moveSpeed)] == 0)
-            d->posY -= d->dirY * d->moveSpeed;
-	}
-	//rotate to the left
-	if (keycode == 123)
-	{
-		//both camera direction and camera plane must be rotated
-        if(d->map[(int)(d->posX - d->dirX * d->moveSpeed)][(int)d->posY] == 0)
-            d->posX -= d->dirX * d->moveSpeed;
-        if(d->map[(int)(d->posX)][(int)(d->posY - d->dirY * d->moveSpeed)] == 0)
-            d->posY -= d->dirY * d->moveSpeed;
-	}
+
+    if (keycode == 36)
+        d->start = 1;
+if (d->start > 0)
+{
+    if (keycode == 126 || keycode == 13)
+    {
+        if(d->map[(int)(d->posX + d->dirX * d->move_speed)][(int)d->posY] == 0)
+            d->posX += d->dirX * d->move_speed;
+        if(d->map[(int)(d->posX)][(int)(d->posY + d->dirY * d->move_speed)] == 0)
+            d->posY += d->dirY * d->move_speed;
+    }
+    if (keycode == 125 || keycode == 1)
+    {
+        if(d->map[(int)(d->posX - d->dirX * d->move_speed)][(int)d->posY] == 0)
+            d->posX -= d->dirX * d->move_speed;
+        if(d->map[(int)(d->posX)][(int)(d->posY - d->dirY * d->move_speed)] == 0)
+            d->posY -= d->dirY * d->move_speed;
+    }
+
+    if (keycode == 124 || keycode == 2)
+    {
+        if(d->map[(int)(d->posX - d->dirX * d->move_speed)][(int)d->posY] == 0)
+            d->posX -= d->dirX * d->move_speed;
+        if(d->map[(int)(d->posX)][(int)(d->posY + d->dirY * d->move_speed)] == 0)
+            d->posY += d->dirY * d->move_speed;
+
+    }
+
+    if (keycode == 123 || keycode == 0)
+    {
+        if(d->map[(int)(d->posX + d->dirX * d->move_speed)][(int)d->posY] == 0)
+            d->posX += d->dirX * d->move_speed;
+        if(d->map[(int)(d->posX)][(int)(d->posY - d->dirY * d->move_speed)] == 0)
+            d->posY -= d->dirY * d->move_speed;
+    }
+    if (d->lvl == 0 && d->posX >= 9 && d->posX <= 11 && d->posY >= 7 && d->posY <= 9)
+    {
+        d->lvl = 1;
+        d->posY = 2;
+        d->posX = 9;
+        d->roof_a = 0xFF000000;
+        d->floor_a = 0x88000000;
+        d->rot = -1200;
+        create_xpm(d->mlx, d->lvl);
+        createMap(d);
+    }
+}
 	if (keycode == 53)
 		exit(0);
 	putImage(d);

@@ -13,8 +13,6 @@
 /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/createMap.c
 ../wolf3d.h
 /nfs/2016/a/asoroka/Clion_projects/Wolf3d/wolf3d.h
-stdio.h
--
 
 /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/create_image.c
 ../wolf3d.h
@@ -28,19 +26,9 @@ stdio.h
 ../wolf3d.h
 /nfs/2016/a/asoroka/Clion_projects/Wolf3d/wolf3d.h
 
-/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/findRay.c
-../wolf3d.h
-/nfs/2016/a/asoroka/Clion_projects/Wolf3d/wolf3d.h
-
 /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/integrate_color.c
-../wolf3d.h
-/nfs/2016/a/asoroka/Clion_projects/Wolf3d/wolf3d.h
 
 /nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/main.c
-../wolf3d.h
-/nfs/2016/a/asoroka/Clion_projects/Wolf3d/wolf3d.h
-
-/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/putColumn.c
 ../wolf3d.h
 /nfs/2016/a/asoroka/Clion_projects/Wolf3d/wolf3d.h
 
