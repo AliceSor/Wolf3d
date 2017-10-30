@@ -66,7 +66,7 @@ void			create_xpm(t_mlx *mlx, int lvl) {
     char *file;
 
     if (lvl == 0)
-        file = "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/xpm/space1_2560x1440.XPM";
+        file = "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/xpm/space3_2560x1600.XPM";
     else
         file = "/nfs/2016/a/asoroka/Clion_projects/Wolf3d/src/xpm/space2_3000x1500.XPM";
     mlx->xpm = (t_xpm *) malloc(sizeof(t_xpm) + 1);

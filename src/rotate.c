@@ -16,7 +16,7 @@ int         rotate(int x, int y, t_data *d)
             double oldPlaneX = d->planeX;
             d->planeX = d->planeX * cos(-d->rot_speed) - d->planeY * sin(-d->rot_speed);
             d->planeY = oldPlaneX * sin(-d->rot_speed) + d->planeY * cos(-d->rot_speed);
-            d->rot -= 5;
+            d->rot -= 2;
             if (d->rot < -2200)
                 d->rot = -1200;
 
@@ -30,7 +30,7 @@ int         rotate(int x, int y, t_data *d)
             d->planeX = d->planeX * cos(d->rot_speed) - d->planeY * sin(d->rot_speed);
             d->planeY = oldPlaneX * sin(d->rot_speed) + d->planeY * cos(d->rot_speed);
             d->mouse_x = x;
-            d->rot += 5;
+            d->rot += 2;
             if (d->rot > 100)
                 d->rot = -1200;
         }

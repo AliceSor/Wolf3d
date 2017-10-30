@@ -30,12 +30,12 @@ static void		init(t_data *d)
         d->move_speed = 0.5;
         d->rot_speed = 4 * RAD;
         d->mouse_x = 0;
-//        d->lvl = 0;
         d->rot = -1200;
-        d->start = 1;
+        d->start = 0;
         d->roof_a = 0;
         d->floor_a = 0;
         createMap(d);
+        d->for_subject = 0;
 	}
 }
 
@@ -45,7 +45,7 @@ int				main(void)
 
 	data = (t_data *)malloc(sizeof(t_data) + 10);
 	init(data);
-//    mlx_put_image_to_window(data->mlx->mlx, data->mlx->win, data->mlx->start->img->im, -1, -1);
+    mlx_put_image_to_window(data->mlx->mlx, data->mlx->win, data->mlx->start->img->im, -1, -1);
 	mlx_hook(data->mlx->win, 2, 5, buttons, data);
 	mlx_hook(data->mlx->win, 17, 0, destroy, 0);
     mlx_hook(data->mlx->win, 6, 0, rotate, data);

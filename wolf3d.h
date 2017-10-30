@@ -88,6 +88,7 @@ typedef struct	s_data
     int         rot;
     int         floor_a;
     int         roof_a;
+    int         for_subject;
 }				t_data;
 
 t_mlx			*create_win(void);

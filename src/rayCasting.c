@@ -57,7 +57,7 @@ static int set_color(t_data *data, t_ray_d *rd, double wall_dist, int side)
     int         color;
 
     if (data->map[rd->map_x][rd->map_y] == 3)
-        a = 0x66000000;
+        a = 0x88000000;
     else if (data->map[rd->map_x][rd->map_y] == 2)
         a = 0x22000000;
     else if (data->map[rd->map_x][rd->map_y] == 1)
@@ -109,7 +109,7 @@ static void     draw_column(t_data *data, t_ray_d *rd, double wall_dist, int sid
         drawEnd = HEIGHT - 1;
     color = set_color(data, rd, wall_dist, side);
     while (++i <= drawStart)
-        put_pixel(rd->x, i, 0xAAAAAA + data->roof_a, data->mlx);
+        put_pixel(rd->x, i, 0x111111 + data->roof_a, data->mlx);
     i = drawStart;
     for (i = drawStart; i <= drawEnd; i++)
     {
