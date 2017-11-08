@@ -1,41 +1,63 @@
-//
-// Created by Alisa Soroka on 10/25/17.
-//
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   rotate.c                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: asoroka <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/10/30 19:54:54 by asoroka           #+#    #+#             */
+/*   Updated: 2017/10/30 21:23:06 by asoroka          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
 #include "../wolf3d.h"
 
-int         rotate(int x, int y, t_data *d)
+static void		a(t_data *d)
 {
-    if (d->start == 1)
-    {
-        if ((x - d->mouse_x) > 0)
-        {
-            double oldDirX = d->dirX;
-            d->dirX = d->dirX * cos(-d->rot_speed) - d->dirY * sin(-d->rot_speed);
-            d->dirY = oldDirX * sin(-d->rot_speed) + d->dirY * cos(-d->rot_speed);
-            double oldPlaneX = d->planeX;
-            d->planeX = d->planeX * cos(-d->rot_speed) - d->planeY * sin(-d->rot_speed);
-            d->planeY = oldPlaneX * sin(-d->rot_speed) + d->planeY * cos(-d->rot_speed);
-            d->rot -= 2;
-            if (d->rot < -2200)
-                d->rot = -1200;
+	double old_dir_x;
+	double old_plane_x;
 
-        }
-        else
-        {
-            double oldDirX = d->dirX;
-            d->dirX = d->dirX * cos(d->rot_speed) - d->dirY * sin(d->rot_speed);
-            d->dirY = oldDirX * sin(d->rot_speed) + d->dirY * cos(d->rot_speed);
-            double oldPlaneX = d->planeX;
-            d->planeX = d->planeX * cos(d->rot_speed) - d->planeY * sin(d->rot_speed);
-            d->planeY = oldPlaneX * sin(d->rot_speed) + d->planeY * cos(d->rot_speed);
-            d->mouse_x = x;
-            d->rot += 2;
-            if (d->rot > 100)
-                d->rot = -1200;
-        }
-        d->mouse_x = x;
-        putImage(d);
-    }
-    return (0);
+	old_dir_x = d->dir_x;
+	d->dir_x = d->dir_x * cos(-d->rot_speed) - d->dir_y * sin(-d->rot_speed);
+	d->dir_y = old_dir_x * sin(-d->rot_speed) + d->dir_y * cos(-d->rot_speed);
+	old_plane_x = d->plane_x;
+	d->plane_x = d->plane_x * cos(-d->rot_speed) -\
+	d->plane_y * sin(-d->rot_speed);
+	d->plane_y = old_plane_x * sin(-d->rot_speed) +\
+	d->plane_y * cos(-d->rot_speed);
+	d->rot -= 2;
+	if (d->rot < -2200)
+		d->rot = -1200;
+}
+
+static void		b(t_data *d)
+{
+	double old_dir_x;
+	double old_plane_x;
+
+	old_dir_x = d->dir_x;
+	d->dir_x = d->dir_x * cos(d->rot_speed) - d->dir_y * sin(d->rot_speed);
+	d->dir_y = old_dir_x * sin(d->rot_speed) + d->dir_y * cos(d->rot_speed);
+	old_plane_x = d->plane_x;
+	d->plane_x = d->plane_x * cos(d->rot_speed) -\
+	d->plane_y * sin(d->rot_speed);
+	d->plane_y = old_plane_x * sin(d->rot_speed) +\
+	d->plane_y * cos(d->rot_speed);
+	d->rot += 2;
+	if (d->rot > 100)
+		d->rot = -1200;
+}
+
+int				rotate(int x, int y, t_data *d)
+{
+	if (d->start == 1 && y != -10000000)
+	{
+		if ((x - d->mouse_x) > 0)
+			a(d);
+		else
+			b(d);
+		d->mouse_x = x;
+		put_image(d);
+	}
+	return (0);
 }
