@@ -1,5 +1,3 @@
-# wolf3d
-
 ## compile
 ```
 make
